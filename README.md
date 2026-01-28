@@ -15,9 +15,9 @@ It is built to be:
 
 ---
 
-## 🚀 Comprehensive Feature List
+##  System Feature List
 
-Below is a complete breakdown of all available platform functionalities.
+Below is a structured overview highlighting all the key features available in the platform
 
 ---
 
