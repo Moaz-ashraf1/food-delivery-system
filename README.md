@@ -506,3 +506,66 @@ FUNCTION PlaceOrder(user_id, cart_id, payment_method, address_id, voucher_code):
 END FUNCTION
 
 ```
+# 🧩 Entity Relationships
+
+###  Entities
+
+* **User**
+* **Cart**
+* **CartItem**
+* **Order**
+* **OrderItem**
+* **Product**
+* **Address**
+* **Payment**
+* **Voucher**
+
+---
+
+###  Relationships
+
+* **User → Order**
+
+  * User has many Orders
+  * Order belongs to User
+
+* **User → Cart**
+
+  * User has one Cart
+  * Cart belongs to User
+
+* **User → Address**
+
+  * User has many Addresses
+  * Address belongs to User
+
+* **Cart → CartItem**
+
+  * Cart has many CartItems
+  * CartItem belongs to Cart
+
+* **CartItem → Product**
+
+  * CartItem belongs to Product
+  * Product has many CartItems
+
+* **Order → OrderItem**
+
+  * Order has many OrderItems
+  * OrderItem belongs to Order
+
+* **OrderItem → Product**
+
+  * OrderItem belongs to Product
+  * Product has many OrderItems
+
+* **Order → Payment**
+
+  * Order has one Payment
+  * Payment belongs to Order
+
+* **Voucher → User**
+
+  * Voucher can be used by many Users
+  * User can use many Vouchers *(logical usage, not ownership)*
+
