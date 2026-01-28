@@ -524,20 +524,20 @@ END FUNCTION
 
 ###  Relationships
 
-* **User → Order**
+* **Customer → Order**
 
-  * User has many Orders
-  * Order belongs to User
+  * Customer has many Orders
+  * Order belongs to Customer
 
-* **User → Cart**
+* **Customer → Cart**
 
-  * User has one Cart
-  * Cart belongs to User
+  * Customer has one Cart
+  * Cart belongs to Customer
 
-* **User → Address**
+* **Customer → Address**
 
-  * User has many Addresses
-  * Address belongs to User
+  * Customer has many Addresses
+  * Address belongs to Customer
 
 * **Cart → CartItem**
 
